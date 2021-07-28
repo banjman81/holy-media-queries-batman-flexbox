@@ -17,8 +17,6 @@
 }
 
 #middle {
-  display: flex;
-  justify-content: space-around;
   align-items: stretch;
   height: 60vh;
   width: 100vw;
@@ -26,11 +24,12 @@
 
 #main {
   display: flex;
-  width: 80%;
+  width: 100%;
+  height: 100%;
 }
 
 #nav {
-  width: 20%;
+  width: 100%;
   background-color: #4b4e6d;
 }
 
@@ -40,7 +39,7 @@
 }
 
 #ads {
-  width: 20vw;
+  width: 40vw;
   background-color: #f2a541;
 }
 
@@ -48,4 +47,23 @@
   height: 20vh;
   width: 100vw;
   background-color: #f08a4b;
+}
+
+@media screen and (max-width:700px) {
+  #main{
+    display: inline;
+    
+  }#nav {
+    height: 20%;
+  }
+  #articles {
+    height: 60%;
+    width: 100%;
+    align-self: stretch;
+  }
+  
+  #ads {
+    height: 20%;
+    width: 100%;
+  }
 }
